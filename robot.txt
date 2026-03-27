@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Σύνδεση με το Sitemap (πάντα με https)
+Sitemap: https://electrobulb.gr/sitemap.xml
