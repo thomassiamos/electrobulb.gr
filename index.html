@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>ElectroBulb | Πιστοποιημένος Ηλεκτρολόγος Αθήνα | 24/7 Άμεση Κάλυψη</title>
-    <meta name="description" content="Αδειούχος ηλεκτρολόγος στην Αθήνα (Αγίου Μελετίου 101). Άμεση αποκατάσταση βλαβών, πιστοποιητικά ΔΕΔΔΗΕ (ΥΔΕ) & αναβαθμίσεις πινάκων. Εξυπηρέτηση σε όλη την Αττική.">
-    <meta name="keywords" content="ηλεκτρολόγος αθήνα, πιστοποιητικά δεη, βλάβες ρεύματος, ηλεκτρολόγος περιστέρι, ηλεκτρολόγος γαλάτσι, υδε δεδδηε, ηλεκτρολόγος κέντρο αθήνα">
+    <title>ElectroBulb | Πιστοποιημένος Ηλεκτρολόγος Αθήνα | Άμεση Τεχνική Υποστήριξη</title>
+    <meta name="description" content="Πιστοποιημένος ηλεκτρολόγος στην Αθήνα (Αγίου Μελετίου 101). Άμεση αποκατάσταση βλαβών, πιστοποιητικά ΔΕΔΔΗΕ (ΥΔΕ) & αναβαθμίσεις πινάκων. Εξυπηρέτηση σε όλη την Αττική.">
+    <meta name="keywords" content="ηλεκτρολόγος αθήνα, πιστοποιητικά δεη, βλάβες ρεύματος, ηλεκτρολόγος περιστέρι, ηλεκτρολόγος γαλάτσι, υδε δεдδηε, ηλεκτρολόγος κέντρο αθήνα">
     <link rel="canonical" href="https://electrobulb.gr">
     
     <meta property="og:type" content="website">
@@ -111,7 +111,6 @@
         .hero-title { font-size: clamp(2.8rem, 10vw, 7rem); line-height: 0.9; font-weight: 800; text-transform: uppercase; letter-spacing: -0.05em; }
 
         nav { transition: all 0.4s ease; }
-        /* Consistent Nav Height/Padding as requested */
         nav.scrolled { background: #ffffff !important; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border-bottom: 1px solid #f1f5f9; }
         .nav-link.active, .m-link.active { color: var(--brand) !important; font-weight: 900; }
 
@@ -154,23 +153,30 @@
             .m-bar.active { transform: translateY(0); }
             #btt { bottom: 110px; }
         }
+
+        /* Brands Logo Styling */
+        .brand-logo {
+            max-height: 55px; width: auto; transition: transform 0.3s ease;
+        }
+        .brand-logo:hover { transform: scale(1.08); }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Navbar: Maintain consistent padding and enlarged Logo -->
+    <!-- Navbar -->
     <nav id="navbar" class="fixed w-full z-[150] bg-white/90 border-b border-transparent py-4 md:py-6 px-6 md:px-12">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#hero"><img src="img/logo.png" alt="ElectroBulb" class="h-11 md:h-18 transition-all"></a>
+            <a href="index.html"><img src="img/logo.png" alt="ElectroBulb" class="h-11 md:h-18 transition-all"></a>
             <div id="desktop-nav" class="hidden lg:flex items-center gap-10 font-extrabold text-[11px] tracking-[0.2em] uppercase text-slate-500">
-                <a href="#hero" class="nav-link">Αρχικη</a>
-                <a href="#why-us" class="nav-link">Γιατι εμας</a>
-                <a href="#services" class="nav-link">Υπηρεσιες</a>
-                <a href="#areas" class="nav-link">Περιοχες</a>
-                <a href="#faq" class="nav-link">Faq</a>
+                <a href="index.html#hero" class="nav-link">Αρχικη</a>
+                <a href="index.html#why-us" class="nav-link">Γιατι εμας</a>
+                <a href="index.html#services" class="nav-link">Υπηρεσιες</a>
+                <a href="index.html#areas" class="nav-link">Περιοχες</a>
+                <a href="index.html#faq" class="nav-link">Faq</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
             </div>
             <div class="flex items-center gap-3 md:gap-4">
-                <a href="tel:6983915704" onclick="return gtag_report_conversion('tel:6983915704');" class="bg-[#f74600] text-white px-5 md:px-8 py-2 md:py-3.5 rounded-xl md:rounded-2xl font-black text-xs md:text-sm active:scale-95 transition shadow-lg shadow-orange-600/20 uppercase">698 391 5704</a>
+                <a href="tel:6983915704" onclick="return gtag_report_conversion('tel:6983915704');" class="bg-[#f74600] text-white px-5 md:px-8 py-2.5 md:py-3.5 rounded-xl md:rounded-2xl font-black text-xs md:text-sm active:scale-95 transition shadow-lg shadow-orange-600/20 uppercase">698 391 5704</a>
                 <button id="menu-open" class="lg:hidden p-2 rounded-xl hover:bg-slate-50 transition"><i data-lucide="align-right" class="w-8 h-8 text-slate-900"></i></button>
             </div>
         </div>
@@ -182,12 +188,13 @@
             <img src="img/logo.png" alt="Logo" class="h-10">
             <button id="menu-close" class="p-3 bg-slate-50 rounded-full text-slate-900"><i data-lucide="x" class="w-8 h-8"></i></button>
         </div>
-        <div class="flex flex-col gap-10">
-            <a href="#hero" class="m-link text-5xl font-black uppercase italic tracking-tighter">Αρχικη</a>
-            <a href="#why-us" class="m-link text-5xl font-black uppercase italic tracking-tighter">Γιατι εμας</a>
-            <a href="#services" class="m-link text-5xl font-black uppercase italic tracking-tighter">Υπηρεσιες</a>
-            <a href="#areas" class="m-link text-5xl font-black uppercase italic tracking-tighter">Περιοχες</a>
-            <a href="#faq" class="m-link text-5xl font-black uppercase italic tracking-tighter">Faq</a>
+        <div class="flex flex-col gap-10 overflow-y-auto">
+            <a href="index.html#hero" class="m-link text-5xl font-black uppercase italic tracking-tighter">Αρχικη</a>
+            <a href="index.html#why-us" class="m-link text-5xl font-black uppercase italic tracking-tighter">Γιατι εμας</a>
+            <a href="index.html#services" class="m-link text-5xl font-black uppercase italic tracking-tighter">Υπηρεσιες</a>
+            <a href="index.html#areas" class="m-link text-5xl font-black uppercase italic tracking-tighter">Περιοχες</a>
+            <a href="index.html#faq" class="m-link text-5xl font-black uppercase italic tracking-tighter">Faq</a>
+            <a href="gallery.html" class="m-link text-5xl font-black uppercase italic tracking-tighter">Gallery</a>
         </div>
         <div class="mt-auto pt-10 border-t border-slate-100">
             <p class="text-[10px] font-black uppercase text-slate-400 mb-4 tracking-widest text-center">Τεχνικη Υποστηριξη</p>
@@ -200,7 +207,7 @@
         <section id="hero" class="hero-viewport px-8 md:px-12">
             <div class="max-w-7xl mx-auto w-full relative z-10">
                 <div data-aos="fade-right" class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md text-white px-5 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-10 border border-white/20">
-                    <i data-lucide="shield-check" class="w-5 h-5 text-[#f74600] fill-current"></i> Αδειουχος Ηλεκτρολογος Εγκαταστατης
+                    <i data-lucide="shield-check" class="w-5 h-5 text-[#f74600] fill-current"></i> Πιστοποιημενος Ηλεκτρολογος
                 </div>
                 <h1 data-aos="fade-up" class="hero-title mb-10 uppercase">
                     Διακοπη <span class="text-[#f74600] italic">Ρευματος;</span> <br> Τεχνικη Καλυψη Αμεσα.
@@ -220,7 +227,7 @@
                 <div data-aos="fade-right">
                     <h2 class="text-5xl font-black uppercase italic tracking-tighter mb-8 leading-none">Γιατι να μας <span class="text-[#f74600]">εμπιστευτειτε;</span></h2>
                     <div class="space-y-10 mt-12">
-                        <div class="flex gap-6"><div class="bg-slate-50 p-4 rounded-2xl text-[#f74600] shrink-0"><i data-lucide="award" class="w-8 h-8"></i></div><div><h4 class="text-xl font-black uppercase italic mb-2">Πιστοποιημενη Ποιοτητα</h4><p class="text-slate-500 font-semibold">Ολες οι εργασιες γινονται απο αδειουχο τεχνικο με βαση τα ευρωπαικα προτυπα ασφαλειας.</p></div></div>
+                        <div class="flex gap-6"><div class="bg-slate-50 p-4 rounded-2xl text-[#f74600] shrink-0"><i data-lucide="award" class="w-8 h-8"></i></div><div><h4 class="text-xl font-black uppercase italic mb-2">Πιστοποιημενη Ποιοτητα</h4><p class="text-slate-500 font-semibold">Ολες οι εργασιες γινονται απο πιστοποιημενο τεχνικο με βαση τα ευρωπαικα προτυπα ασφαλειας.</p></div></div>
                         <div class="flex gap-6"><div class="bg-slate-50 p-4 rounded-2xl text-[#f74600] shrink-0"><i data-lucide="clock" class="w-8 h-8"></i></div><div><h4 class="text-xl font-black uppercase italic mb-2">Συνεπεια & Ταχυτητα</h4><p class="text-slate-500 font-semibold">Κατανοουμε το επειγον της βλαβης και ανταποκρινομαστε αμεσα, χωρις καθυστερησεις.</p></div></div>
                     </div>
                 </div>
@@ -231,6 +238,22 @@
                         <li class="flex items-start gap-4 font-bold"><i data-lucide="alert-triangle" class="text-[#f74600] shrink-0"></i> Κατεβαστε τον γενικο διακοπτη αν υπαρχει οσμη καμενου.</li>
                         <li class="flex items-start gap-4 font-bold"><i data-lucide="alert-triangle" class="text-[#f74600] shrink-0"></i> Αποσυνδεστε ευαισθητες συσκευες μεχρι την αποκατασταση.</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section (Colored & Box-less) -->
+        <section class="py-20 bg-white border-b border-slate-50">
+            <div class="max-w-7xl mx-auto px-8 text-center">
+                <h3 class="text-[11px] font-black uppercase text-slate-400 tracking-[0.3em] mb-16 italic" data-aos="fade-up">Εγγυημενη ποιοτητα υλικων απο αναγνωρισμενους κατασκευαστες</h3>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-12 md:gap-x-20" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/tns.png" alt="TNS Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=TNS'">
+                    <img src="img/xaralampidis.png" alt="Xaralampidis Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=XARALAMPIDIS'">
+                    <img src="img/silver.png" alt="Silver Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=SILVER'">
+                    <img src="img/telemax.png" alt="Telemax Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=TELEMAX'">
+                    <img src="img/izzy.png" alt="Izzy Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=IZZY'">
+                    <img src="img/gruppe.png" alt="Gruppe Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=GRUPPE'">
+                    <img src="img/geyer.png" alt="Geyer Logo" class="brand-logo" onerror="this.src='https://placehold.co/120x50?text=GEYER'">
                 </div>
             </div>
         </section>
@@ -334,7 +357,7 @@
                             <div class="flex justify-between"><span>Κυριακη</span> <span>11:00 - 20:00</span></div>
                         </div>
                     </div>
-                    <!-- The correct Google Maps Embed with Business Pin -->
+                    <!-- Fixed Map with Business Pin -->
                     <div class="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl h-[400px] md:h-[500px] border-4 border-white/5" data-aos="zoom-in">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.9957715531336!2d23.729171899999997!3d38.0005591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3a103669259%3A0xf80ee4cef3b32336!2zRWxlY3Ryb2J1bGIg4oCTIM6XzrvOtc66z4TPgc6_zrvPjM6zzr_PgiAmIM6XzrvOtc66z4TPgc65zrrOrc-CIM6jz4XPg866zrXPhc6tz4I!5e0!3m2!1sel!2sgr!4v1774657873675!5m2!1sel!2sgr" 
@@ -361,7 +384,7 @@
                         <span class="faq-title">Ειναι οι εργασιες σας πιστοποιημενες;</span>
                         <div class="icon-box"><div class="icon-h"></div><div class="icon-v"></div></div>
                     </div>
-                    <div class="faq-content"><p>Ναι, ολες οι εργασιες εκτελουνται αποκλειστικα απο αδειουχο ηλεκτρολογο εγκατασταστη και συνοδευονται απο εγγυηση καλης λειτουργιας.</p></div>
+                    <div class="faq-content"><p>Ναι, ολες οι εργασιες εκτελουνται αποκλειστικα απο πιστοποιημενο ηλεκτρολογο και συνοδευονται απο εγγυηση καλης λειτουργιας.</p></div>
                 </article>
                 <article class="faq-card">
                     <div class="faq-trigger">
@@ -377,7 +400,7 @@
     <footer class="py-20 px-8 bg-[#010410] text-white text-center">
         <div class="max-w-7xl mx-auto">
             <div class="text-3xl font-black italic mb-8 uppercase tracking-tighter">ELECTRO<span class="text-[#f74600]">BULB</span></div>
-            <p class="text-[11px] font-extrabold uppercase tracking-[0.5em] text-slate-500 mb-10 italic">Αδειουχος Ηλεκτρολογος Εγκαταστατης • Αγίου Μελετίου 101, Αθήνα</p>
+            <p class="text-[11px] font-extrabold uppercase tracking-[0.5em] text-slate-500 mb-10 italic">Πιστοποιημενος Ηλεκτρολογος • Αγίου Μελετίου 101, Αθήνα</p>
             <p class="text-[10px] text-slate-700 uppercase tracking-widest font-bold">© 2026 ElectroBulb.gr. All Rights Reserved.</p>
         </div>
     </footer>
@@ -432,11 +455,15 @@
         // Smooth Scroll for Navigation
         [...nLinks, ...mobileLinks].forEach(link => {
             link.onclick = (e) => {
+                if (link.getAttribute('href') === 'gallery.html') return;
+                
                 e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const target = document.querySelector(targetId);
-                overlay.classList.add('translate-x-full');
-                window.scrollTo({ top: target.offsetTop - nav.offsetHeight, behavior: 'smooth' });
+                const targetId = link.getAttribute('href').split('#')[1];
+                const target = document.getElementById(targetId);
+                if (target) {
+                    overlay.classList.add('translate-x-full');
+                    window.scrollTo({ top: target.offsetTop - nav.offsetHeight, behavior: 'smooth' });
+                }
             };
         });
     </script>
