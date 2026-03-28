@@ -18,7 +18,6 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
 
-    <!-- Google Ads Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18042655763"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -163,7 +162,6 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navbar -->
     <nav id="navbar" class="fixed w-full z-[150] bg-white/90 border-b border-transparent py-4 md:py-6 px-6 md:px-12">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html"><img src="img/logo.png" alt="ElectroBulb" class="h-11 md:h-18 transition-all"></a>
@@ -182,28 +180,28 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mob-menu" class="fixed inset-0 bg-white z-[200] p-12 flex flex-col translate-x-full transition-transform duration-500">
-        <div class="flex justify-between items-center mb-16">
+    <div id="mob-menu" class="fixed inset-0 bg-white z-[200] p-8 md:p-12 flex flex-col translate-x-full transition-transform duration-500">
+        <div class="flex justify-between items-center mb-8 shrink-0">
             <img src="img/logo.png" alt="Logo" class="h-10">
             <button id="menu-close" class="p-3 bg-slate-50 rounded-full text-slate-900"><i data-lucide="x" class="w-8 h-8"></i></button>
         </div>
-        <div class="flex flex-col gap-10 overflow-y-auto">
-            <a href="index.html#hero" class="m-link text-5xl font-black uppercase italic tracking-tighter">Αρχικη</a>
-            <a href="index.html#why-us" class="m-link text-5xl font-black uppercase italic tracking-tighter">Γιατι εμας</a>
-            <a href="index.html#services" class="m-link text-5xl font-black uppercase italic tracking-tighter">Υπηρεσιες</a>
-            <a href="index.html#areas" class="m-link text-5xl font-black uppercase italic tracking-tighter">Περιοχες</a>
-            <a href="index.html#faq" class="m-link text-5xl font-black uppercase italic tracking-tighter">Faq</a>
-            <a href="gallery.html" class="m-link text-5xl font-black uppercase italic tracking-tighter">Gallery</a>
+        
+        <div class="flex-1 flex flex-col justify-evenly py-4">
+            <a href="index.html#hero" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Αρχικη</a>
+            <a href="index.html#why-us" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Γιατι εμας</a>
+            <a href="index.html#services" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Υπηρεσιες</a>
+            <a href="index.html#areas" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Περιοχες</a>
+            <a href="index.html#faq" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Faq</a>
+            <a href="gallery.html" class="m-link text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Gallery</a>
         </div>
-        <div class="mt-auto pt-10 border-t border-slate-100">
+
+        <div class="shrink-0 pt-8 border-t border-slate-100">
             <p class="text-[10px] font-black uppercase text-slate-400 mb-4 tracking-widest text-center">Τεχνικη Υποστηριξη</p>
             <a href="tel:6983915704" class="text-3xl font-black text-[#f74600] block text-center uppercase tracking-tighter">698 391 5704</a>
         </div>
     </div>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero" class="hero-viewport px-8 md:px-12">
             <div class="max-w-7xl mx-auto w-full relative z-10">
                 <div data-aos="fade-right" class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md text-white px-5 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-10 border border-white/20">
@@ -221,7 +219,6 @@
             </div>
         </section>
 
-        <!-- Why Us -->
         <section id="why-us" class="py-24 px-8 bg-white border-b border-slate-100">
             <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
@@ -242,7 +239,6 @@
             </div>
         </section>
 
-        <!-- Brands Section (Colored & Box-less) -->
         <section class="py-20 bg-white border-b border-slate-50">
             <div class="max-w-7xl mx-auto px-8 text-center">
                 <h3 class="text-[11px] font-black uppercase text-slate-400 tracking-[0.3em] mb-16 italic" data-aos="fade-up">Εγγυημενη ποιοτητα υλικων απο αναγνωρισμενους κατασκευαστες</h3>
@@ -258,7 +254,6 @@
             </div>
         </section>
 
-        <!-- Services -->
         <section id="services" class="py-24 px-8 md:px-12 bg-white">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-6xl font-black uppercase italic tracking-tighter mb-20 leading-none border-l-[12px] border-[#f74600] pl-8 text-slate-900">Υπηρεσιες.</h2>
@@ -282,7 +277,6 @@
             </div>
         </section>
 
-        <!-- Reviews Section with Google Button -->
         <section id="reviews" class="py-24 px-8 bg-slate-50 border-y border-slate-100 text-center">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-5xl font-black uppercase italic tracking-tighter mb-20 uppercase text-[#010410]">Εμπιστοσυνη <span class="text-[#f74600]">Πελατων.</span></h2>
@@ -303,7 +297,6 @@
                         <p class="font-black uppercase text-xs tracking-widest text-[#f74600]">Μαρια Σ.</p>
                     </div>
                 </div>
-                <!-- Call to Action for Google Reviews -->
                 <div data-aos="zoom-in">
                     <a href="https://g.page/r/CTYjs_PO5A74EBE/review" target="_blank" class="inline-flex items-center gap-3 bg-white text-slate-900 px-10 py-5 rounded-2xl font-black uppercase text-sm shadow-xl shadow-slate-200/50 border border-slate-100 hover:border-[#f74600] transition active:scale-95">
                         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="h-6">
@@ -313,7 +306,6 @@
             </div>
         </section>
 
-        <!-- Areas -->
         <section id="areas" class="py-24 px-8 bg-white border-b border-slate-100">
             <div class="max-w-7xl mx-auto text-center">
                 <h2 class="text-5xl font-black uppercase italic tracking-tighter mb-6 leading-none">Περιοχες <span class="text-[#f74600]">Εξυπηρετησης.</span></h2>
@@ -342,7 +334,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-24 px-8 bg-slate-900 text-white">
             <div class="max-w-7xl mx-auto">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -357,10 +348,9 @@
                             <div class="flex justify-between"><span>Κυριακη</span> <span>11:00 - 20:00</span></div>
                         </div>
                     </div>
-                    <!-- Fixed Map with Business Pin -->
                     <div class="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl h-[400px] md:h-[500px] border-4 border-white/5" data-aos="zoom-in">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.9957715531336!2d23.729171899999997!3d38.0005591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3a103669259%3A0xf80ee4cef3b32336!2zRWxlY3Ryb2J1bGIg4oCTIM6XzrvOtc66z4TPgc6_zrvPjM6zzr_PgiAmIM6XzrvOtc66z4TPgc65zrrOrc-CIM6jz4XPg866zrXPhc6tz4I!5e0!3m2!1sel!2sgr!4v1774657873675!5m2!1sel!2sgr" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.1357640243615!2d23.7265970!3d38.0005591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd330761234b%3A0xf8397a66b3f72336!2sAg.%20Meletiou%20101%2C%20Athina%20112%2052!5e0!3m2!1sen!2sgr!4v1711600000000!5m2!1sen!2sgr" 
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
@@ -368,7 +358,6 @@
             </div>
         </section>
 
-        <!-- FAQ -->
         <section id="faq" class="py-24 px-8 max-w-4xl mx-auto">
             <h2 class="text-5xl font-black mb-20 uppercase italic text-center tracking-tighter leading-none text-[#010410]">Faq<span class="text-[#f74600]">.</span></h2>
             <div class="space-y-4">
@@ -405,7 +394,6 @@
         </div>
     </footer>
 
-    <!-- UI Components -->
     <div id="btt" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i data-lucide="arrow-up" class="w-8 h-8"></i></div>
 
     <div id="m-bar" class="m-bar">
@@ -413,7 +401,6 @@
         <a href="tel:6983915704" onclick="return gtag_report_conversion('tel:6983915704');" class="bg-[#f74600] text-white px-9 py-4 rounded-2xl font-black text-sm active:scale-95 transition shadow-lg">ΚΛΗΣΗ</a>
     </div>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true }); lucide.createIcons();
